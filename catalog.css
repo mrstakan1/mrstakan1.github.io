@@ -1,0 +1,100 @@
+h1, h2, h3 {
+    text-align: center;
+}
+
+main {
+    padding: 0 15%;
+}
+
+.toy-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.toy-card {
+    display: block;
+}
+
+.toy-card img {
+    width: 100%;
+    transition: .3s;
+}
+
+.toy-card img:hover {
+    transform: scale(1.1);
+}
+
+.toy-card p {
+    font-size: calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 16px);
+    margin: 0;
+}
+
+.toy-card p span {
+    font-size: inherit;
+}
+
+.toy-card-wrap .button-add-to-cart {
+    background: yellow;
+    font-size: .7em;
+    width: 100%;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.toy-card-wrap .button-add-to-cart:hover {
+    background: rgb(255, 242, 0);
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+.notification {
+    margin-top: 4em;
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 20px;
+    background-color: yellow;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    animation: fadeInOut 3s;
+    border: solid 2px black;
+    z-index: 999;
+}
+  
+
+@media (max-width: 1200px) {
+    main {
+        padding: 0 5%;
+    }
+}
+
+@media (max-width: 900px) {
+    main {
+        padding: 0 1em;
+    }
+
+    .toy-card-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .toy-card-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 550px) {
+    .toy-card-container {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,123 @@
+h1, h2, h3 {
+    text-align: center;
+}
+
+/* main {
+    padding: 0 15%;
+} */
+
+.back-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: yellow; /* Цвет фона */
+    color: black; /* Цвет текста */
+    border: solid 1px black;
+  }
+  
+  /* Эффекты при наведении */
+.back-button:hover {
+    background-color: lightyellow; /* Цвет фона при наведении */
+}
+
+.toy-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    padding: 0 15%;
+}
+
+.toy-container img {
+    justify-self: end;
+    max-width: 100%;
+}
+
+.toy-info {
+    margin: 0;
+}
+
+.toy-name, .toy-price {
+    font-size: 1.1em;
+    margin: 0;
+}
+
+.toy-price span {
+    font-size: inherit;
+}
+
+.button-add-to-cart {
+    background: yellow;
+    font-size: .7em;
+    border: 2px solid black;
+    cursor: pointer;
+    margin-top: 1em;
+    font-size: 1em;
+}
+
+.button-add-to-cart:hover {
+    background: rgb(255, 242, 0);
+}
+
+.toy-description {
+    font-size: .6em;
+}
+
+@media (max-width: 800px) {
+    .toy-container {
+        grid-template-columns: 1fr;
+    }
+
+    .toy-container img {
+        justify-self: center;
+        width: 100%;
+    }
+
+    .toy-name, .toy-price {
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    .button-add-to-cart {
+        font-size: 1.4em;
+        width: 100%;
+    }
+
+    .toy-description {
+        font-size: .7em;
+    }
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+.notification {
+    margin-top: 4em;
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 20px;
+    background-color: yellow;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    animation: fadeInOut 3s;
+    border: solid 2px black;
+    z-index: 999;
+}
+  
+
+@media (max-width: 600px) {
+    .toy-container {
+        padding: 0 1em;
+    }
+}

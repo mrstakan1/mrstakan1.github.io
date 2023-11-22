@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Каталог</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="catalog.css">
+	<link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+	<script src="script.js"></script>
+</head>
+
+<body>
+	<section class="top-nav">
+		<a href="index.html">
+			<img src="Images/favicon.png" alt="icon">
+		</a>
+		<h2>МИР ИГРУШЕК</h2>
+		<input id="menu-toggle" type="checkbox" />
+		<label class='menu-button-container' for="menu-toggle">
+			<div class='menu-button'></div>
+		</label>
+		<ul class="menu">
+			<li><a href="catalogue.html">КАТАЛОГ</a></li>
+			<li><a href="aboutUs.html">О НАС</a></li>
+			<li><a href="cart.html">КОРЗИНА</a></li>
+		</ul>
+	</section>
+	<main>
+		<h1>Каталог товаров</h1>
+		<h2>Популярное</h2>
+		<div class="toy-card-container">
+			<div class="notification" id="notification">Товар добавлен в корзину</div>
+			<div class="toy-card-wrap">
+				<a href="toy1.html" class="toy-card">
+					<img src="Images/toy1.jpeg" alt="">
+					<p class="toy-name">Игрушка 1</p>
+					<p><span class="price">100</span> ₽</p>
+				</a>
+				<button class="button-add-to-cart" onclick="addToCartFromCatalogue(this)">В корзину</button>
+			</div>
+			<div class="toy-card-wrap">
+				<a href="#" class="toy-card">
+					<img src="Images/toy2.jpeg" alt="">
+					<p class="toy-name">Игрушка 2</p>
+					<p><span class="price">100</span> ₽</p>
+				</a>
+				<button class="button-add-to-cart" onclick="addToCartFromCatalogue(this)">В корзину</button>
+			</div>
+			<div class="toy-card-wrap">
+				<a href="#" class="toy-card">
+					<img src="Images/toy3.jpeg" alt="">
+					<p class="toy-name">Игрушка 3</p>
+					<p><span class="price">100</span> ₽</p>
+				</a>
+				<button class="button-add-to-cart" onclick="addToCartFromCatalogue(this)">В корзину</button>
+			</div>
+			<div class="toy-card-wrap">
+				<a href="#" class="toy-card">
+					<img src="Images/toy4.jpeg" alt="">
+					<p class="toy-name">Игрушка 4</p>
+					<p><span class="price">100</span> ₽</p>
+				</a>
+				<button class="button-add-to-cart" onclick="addToCartFromCatalogue(this)">В корзину</button>
+			</div>
+		</div>
+		<h2>Для мальчиков</h2>
+		<div class="toy-card-container">
+			<div class="toy-card-wrap">
+				<a href="toy5.html" class="toy-card">
+					<img src="Images/toy5.jpeg" alt="">
+					<p class="toy-name">Игрушка 5</p>
+					<p><span class="price">100</span> ₽</p>
+				</a>
+				<button class="button-add-to-cart" onclick="addToCartFromCatalogue(this)">В корзину</button>
+			</div>
+			<div class="toy-card-wrap">
+				<a href="#" class="toy-card">
+					<img src="Images/toy6.jpeg" alt="">
+					<p class="toy-name">Игрушка 6</p>
+					<p><span class="price">100</span> ₽</p>
+				</a>
+				<button class="button-add-to-cart" onclick="addToCartFromCatalogue(this)">В корзину</button>
+			</div>
+			<div class="toy-card-wrap">
+				<a href="#" class="toy-card">
+					<img src="Images/toy7.jpeg" alt="">
+					<p class="toy-name">Игрушка 7</p>
+					<p><span class="price">100</span> ₽</p>
+				</a>
+				<button class="button-add-to-cart" onclick="addToCartFromCatalogue(this)">В корзину</button>
+			</div>
+			<div class="toy-card-wrap">
+				<a href="#" class="toy-card">
+					<img src="Images/toy8.jpeg" alt="">
+					<p class="toy-name">Игрушка 8</p>
+					<p><span class="price">100</span> ₽</p>
+				</a>
+				<button class="button-add-to-cart" onclick="addToCartFromCatalogue(this)">В корзину</button>
+			</div>
+		</div>
+		<h2>Для девочек</h2>
+		<div class="toy-card-container">
+			<div class="toy-card-wrap">
+				<a href="toy9.html" class="toy-card">
+					<img src="Images/toy9.jpeg" alt="">
+					<p class="toy-name">Игрушка 9</p>
+					<p><span class="price">100</span> ₽</p>
+				</a>
+				<button class="button-add-to-cart" onclick="addToCartFromCatalogue(this)">В корзину</button>
+			</div>
+			<div class="toy-card-wrap">
+				<a href="#" class="toy-card">
+					<img src="Images/toy10.jpeg" alt="">
+					<p class="toy-name">Игрушка 10</p>
+					<p><span class="price">100</span> ₽</p>
+				</a>
+				<button class="button-add-to-cart" onclick="addToCartFromCatalogue(this)">В корзину</button>
+			</div>
+			<div class="toy-card-wrap">
+				<a href="#" class="toy-card">
+					<img src="Images/toy11.jpeg" alt="">
+					<p class="toy-name">Игрушка 11</p>
+					<p><span class="price">100</span> ₽</p>
+				</a>
+				<button class="button-add-to-cart" onclick="addToCartFromCatalogue(this)">В корзину</button>
+			</div>
+			<div class="toy-card-wrap">
+				<a href="#" class="toy-card">
+					<img src="Images/toy12.jpeg" alt="">
+					<p class="toy-name">Игрушка 12</p>
+					<p><span class="price">100</span> ₽</p>
+				</a>
+				<button class="button-add-to-cart" onclick="addToCartFromCatalogue(this)">В корзину</button>
+			</div>
+			<div class="toy-card-wrap">
+				<a href="#" class="toy-card">
+					<img src="Images/toy13.jpeg" alt="">
+					<p class="toy-name">Игрушка 13</p>
+					<p><span class="price">100</span> ₽</p>
+				</a>
+				<button class="button-add-to-cart" onclick="addToCartFromCatalogue(this)">В корзину</button>
+			</div>
+			<div class="toy-card-wrap">
+				<a href="#" class="toy-card">
+					<img src="Images/toy14.jpeg" alt="">
+					<p class="toy-name">Игрушка 14</p>
+					<p><span class="price">100</span> ₽</p>
+				</a>
+				<button class="button-add-to-cart" onclick="addToCartFromCatalogue(this)">В корзину</button>
+			</div>
+		</div>
+		<h2>Развивающие детские игрушки</h2>
+		<div class="toy-card-container">
+			<div class="toy-card-wrap">
+				<a href="toy15.html" class="toy-card">
+					<img src="Images/toy15.jpeg" alt="">
+					<p class="toy-name">Игрушка 15</p>
+					<p><span class="price">100</span> ₽</p>
+				</a>
+				<button class="button-add-to-cart" onclick="addToCartFromCatalogue(this)">В корзину</button>
+			</div>
+			<div class="toy-card-wrap">
+				<a href="#" class="toy-card">
+					<img src="Images/toy16.jpeg" alt="">
+					<p class="toy-name">Игрушка 16</p>
+					<p><span class="price">100</span> ₽</p>
+				</a>
+				<button class="button-add-to-cart" onclick="addToCartFromCatalogue(this)">В корзину</button>
+			</div>
+			<div class="toy-card-wrap">
+				<a href="#" class="toy-card">
+					<img src="Images/toy17.jpeg" alt="">
+					<p class="toy-name">Игрушка 17</p>
+					<p><span class="price">100</span> ₽</p>
+				</a>
+				<button class="button-add-to-cart" onclick="addToCartFromCatalogue(this)">В корзину</button>
+			</div>
+			<div class="toy-card-wrap">
+				<a href="#" class="toy-card">
+					<img src="Images/toy18.jpeg" alt="">
+					<p class="toy-name">Игрушка 18</p>
+					<p><span class="price">100</span> ₽</p>
+				</a>
+				<button class="button-add-to-cart" onclick="addToCartFromCatalogue(this)">В корзину</button>
+			</div>
+		</div>
+		<h2>Деревянные игрушки</h2>
+		<div class="toy-card-container">
+			<div class="toy-card-wrap">
+				<a href="toy19.html" class="toy-card">
+					<img src="Images/toy19.jpeg" alt="">
+					<p class="toy-name">Игрушка 19</p>
+					<p><span class="price">100</span> ₽</p>
+				</a>
+				<button class="button-add-to-cart" onclick="addToCartFromCatalogue(this)">В корзину</button>
+			</div>
+			<div class="toy-card-wrap">
+				<a href="#" class="toy-card">
+					<img src="Images/toy20.jpeg" alt="">
+					<p class="toy-name">Игрушка 20</p>
+					<p><span class="price">100</span> ₽</p>
+				</a>
+				<button class="button-add-to-cart" onclick="addToCartFromCatalogue(this)">В корзину</button>
+			</div>
+			<div class="toy-card-wrap">
+				<a href="#" class="toy-card">
+					<img src="Images/toy21.jpeg" alt="">
+					<p class="toy-name">Игрушка 21</p>
+					<p><span class="price">100</span> ₽</p>
+				</a>
+				<button class="button-add-to-cart" onclick="addToCartFromCatalogue(this)">В корзину</button>
+			</div>
+			<div class="toy-card-wrap">
+				<a href="#" class="toy-card">
+					<img src="Images/toy22.jpeg" alt="">
+					<p class="toy-name">Игрушка 22</p>
+					<p><span class="price">100</span> ₽</p>
+				</a>
+				<button class="button-add-to-cart" onclick="addToCartFromCatalogue(this)">В корзину</button>
+			</div>
+	</main>
+	<footer>
+		<div class="footer">
+			<div class="footer-block">
+				<p class="footer-title">Ссылки</p>
+				<a href="aboutUs.html">О нас</a>
+				<a href="catalogue.html">Каталог</a>
+				<a href="cart.html">Корзина</a>
+			</div>
+			<div class="footer-block">
+				<p class="footer-title">Контакты</p>
+				<p>Мир игрушек</p>
+				<p>+7(495)999-99-99</p>
+				<p>г. Москва, проспект Вернадского, 78с4, 119454</p>
+				
+				
+			</div>
+		</div>
+		<p class="copyright">©Шилов Павел 2023</p>
+		<p class="copyright">ИКБО-30-22</p>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.card-wrapper{
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 3em 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin: 0;
+}
+  
+.flex-item {
+    /* padding: 5px; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #333;
+    font-size: 24px;
+    background-color: lightgoldenrodyellow;
+}
+
+.flex-item > a{
+  cursor: crosshair;
+}
+
+@media (max-width: 768px) {
+    .flex-container {
+      flex-direction: column;
+      height: auto;
+    }
+    .flex-item {
+      flex: auto;
+    }
+}
+
+.for-ray {
+  gap: 4em;
+  opacity: 0.8;
+  background: whit;
+}
+
+/* .for-ray:hover .card-ray {
+  opacity: 0.5;
+  filter: blur(5px);
+} */
+
+/* .for-ray:hover .card-ray:hover {
+
+} */
+
+.card-ray {
+  border: 5px solid #0000;
+  background: linear-gradient(to right, #fffff1, #f3f3f3 50%, lightgoldenrodyellow 50%, lightgoldenrodyellow) padding-box, 
+  conic-gradient(from var(--angle), white, white, yellow 50%, white 50%, white, yellow) border-box;
+  animation: 8s rotate linear infinite;
+}
+
+@keyframes rotate {
+  to {
+      --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.card-ray .title {
+  position: relative;
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.card-ray .content {
+  text-align: center;
+  color: black;
+}
+
+

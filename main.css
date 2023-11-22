@@ -1,0 +1,210 @@
+html{
+    font-size: calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 20px);
+}
+
+body {
+    /* height: 98vh; */
+    min-height: 98vh;
+    display: flex;
+    flex-direction: column;
+    /* padding: 5px 0; */
+}
+
+main {
+    flex-grow: 1;
+}
+
+h1, h2, h3 {
+    font-size: 1em;
+}
+
+.top-nav { /*для пк*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: yellow;
+    border: 2px solid black;
+    height: 50px;
+    padding: 1em;
+    position: sticky;
+    top: 8px;
+    z-index: 999;
+}
+  
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.menu > li { /*чтобы кнопка меню текст не улетала за границы*/
+    margin: 0 1rem;
+    overflow: hidden;
+}
+
+a:link{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+  
+.menu-button-container { /*Для телефонов*/
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-toggle {
+    display: none;
+  }
+  
+.menu-button,
+.menu-button::before,
+.menu-button::after { /*устанавливаем свойства при переключении кнопок*/
+    display: block;
+    background-color: black;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+}
+  
+.menu-button::before {
+    content: "";
+    margin-top: -8px;
+}
+  
+.menu-button::after {
+    content: "";
+    margin-top: 8px;
+}
+  
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(45deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255,0);
+}
+  
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-45deg);
+}
+  
+
+
+main{
+    margin-top: 10px;
+    background-color: white;
+    border: 2px solid black;
+    
+}
+
+main div{
+    margin: 5px;
+}
+
+footer {
+    margin: 5px 0;
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+.footer {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr 3fr;
+    margin-bottom: .5em;
+    width: max-content;
+    margin: 10px auto;
+}
+
+.footer-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-block .footer-title {
+    text-align: center;
+    font-size: .6em;
+    margin-bottom: .5em;
+}
+
+.footer-block p, .footer-block a, address{
+    font-size: .5em;
+    margin: 0;
+    text-align: left;
+}
+
+.copyright {
+    font-size: .5em;
+    text-align: center;
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    .menu-button-container {
+      display: flex;
+}
+  
+.menu {
+      position: absolute;
+      top: 0;
+      margin-top: 80px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      opacity: 100%;
+      }  
+  
+   #menu-toggle ~ .menu li {/*эффект впадания списка*/
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+  
+    #menu-toggle:checked ~ .menu li { /*эффект выпадания списка*/
+      border: 2px solid #333;
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+  
+    .menu > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      width: 95.75%;
+      color: white;
+      background-color: lightgoldenrodyellow;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer {
+        grid-template-columns: 1fr;
+        width: auto;
+    }
+
+    .footer-block p, .footer-block a, address {
+        text-align: center;
+    }
+}

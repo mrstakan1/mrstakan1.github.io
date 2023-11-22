@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/63cd46c35b.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+<body onload="drawCart()">
+    <section class="top-nav">
+		<a href="index.html">
+			<img src="Images/favicon.png" alt="icon">
+		</a>
+		<h2>МИР ИГРУШЕК</h2>
+		<input id="menu-toggle" type="checkbox" />
+		<label class='menu-button-container' for="menu-toggle">
+			<div class='menu-button'></div>
+		</label>
+		<ul class="menu">
+			<li><a href="catalogue.html">КАТАЛОГ</a></li>
+			<li><a href="aboutUs.html">О НАС</a></li>
+			<li><a href="cart.html">КОРЗИНА</a></li>
+		</ul>
+	</section>
+    <main>
+        <h1>Корзина</h1>
+        <!-- <p class="nothing-in-cart">В корзине ничего нет</p> -->
+        <!-- <div class="cart">
+            <div class="cart-items-wrapper">
+                <div class="cart-item">
+                    <img src="https://placehold.co/200x200" alt="">
+                    <div class="cart-item-info">
+                        <p class="toy-name">Игрушка 1</p>
+                        <p class="toy-price">100₽ x 2</p>
+                        <p class="total-price">200₽</p>
+                    </div>
+                    <div class="remove-cart-item">
+                        <button class="fa-solid fa-trash" onclick="removeItemFromCart(this)"></button>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="https://placehold.co/200x200" alt="">
+                    <div class="cart-item-info">
+                        <p class="toy-name">Игрушка 2</p>
+                        <p class="toy-price">100₽ x 2</p>
+                        <p class="total-price">200₽</p>
+                    </div>
+                    <div class="remove-cart-item">
+                        <button class="fa-solid fa-trash" onclick="removeItemFromCart(this)"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout">
+                <p>Итого:</p>
+                <p class="total-amount">300₽</p>
+                <form action="">
+                    <label for="address">Адрес </label>
+                    <input type="text" id="address" required>
+                    <label for="tel">Телефон</label>
+                    <input type="tel" id="tel" required>
+                    <p>Тип оплаты</p>
+                    <div class="payment-radio-wrap">
+                        <div class="payment-radio">
+                            <label for="card">Карта</label>
+                            <input type="radio" name="payment" id="card" value="card" checked>
+                        </div>
+                        <div class="payment-radio">
+                            <label for="cash">Наличные</label>
+                            <input type="radio" name="payment" id="cash" value="cash">
+                        </div>
+                        
+                    </div>
+                    <input type="submit" value="Оформить" class="purchase-button">
+                </form>
+            </div>
+        </div> -->
+    </main>
+    <footer>
+		<div class="footer">
+			<div class="footer-block">
+				<p class="footer-title">Ссылки</p>
+				<a href="aboutUs.html">О нас</a>
+				<a href="catalogue.html">Каталог</a>
+				<a href="cart.html">Корзина</a>
+			</div>
+			<div class="footer-block">
+				<p class="footer-title">Контакты</p>
+				<p>Мир игрушек</p>
+				<p>+7(495)999-99-99</p>
+				<p>г. Москва, проспект Вернадского, 78с4, 119454</p>
+				
+				
+			</div>
+		</div>
+		<p class="copyright">©Шилов Павел 2023</p>
+		<p class="copyright">ИКБО-30-22</p>
+	</footer>
+</body>
+</html>

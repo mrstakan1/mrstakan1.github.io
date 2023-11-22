@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игрушка 1</title>
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="toy.css">
+    <script src="script.js"></script>
+	<script src="goback.js"></script>
+</head>
+
+<body>
+    <section class="top-nav">
+		<a href="index.html">
+			<img src="Images/favicon.png" alt="icon">
+		</a>
+		<h2>МИР ИГРУШЕК</h2>
+		<input id="menu-toggle" type="checkbox" />
+		<label class='menu-button-container' for="menu-toggle">
+			<div class='menu-button'></div>
+		</label>
+		<ul class="menu">
+			<li><a href="catalogue.html">КАТАЛОГ</a></li>
+			<li><a href="aboutUs.html">О НАС</a></li>
+			<li><a href="cart.html">КОРЗИНА</a></li>
+		</ul>
+	</section>
+    <main>
+        <h1>Игрушка 1</h1>
+		<button class="back-button" onclick="redirectToCatalogue()">Назад</button>
+        <div class="toy-container">
+			<div class="notification" id="notification">Товар добавлен в корзину</div>
+            <img src="Images/toy1.jpeg" alt="">
+            <div class="toy-info">
+                <p class="toy-name">Игрушка 1</p>
+                <p class="toy-price"><span class="price">100</span>₽</p>
+                <button class="button-add-to-cart" onclick="addToCart(this)">В корзину</button>
+                <p class="toy-description">Представляем вам нашу новую игрушку, которая наполнит мир вашего ребенка радостью и удивительными приключениями. 
+					Наши игрушки созданы с любовью и вдохновением, чтобы стимулировать воображение, развивать навыки и приносить непревзойденное удовольствие. 
+					Выполненная с особым вниманием к деталям, каждая игрушка призвана стать надежным и веселым спутником вашего малыша, 
+					открывая новые возможности для игр и веселого времяпрепровождения. 
+					Независимо от возраста и интересов, наши игрушки призваны стать неотъемлемой частью детства и радостного развития вашего ребенка.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+		<div class="footer">
+			<div class="footer-block">
+				<p class="footer-title">Ссылки</p>
+				<a href="aboutUs.html">О нас</a>
+				<a href="catalogue.html">Каталог</a>
+				<a href="cart.html">Корзина</a>
+			</div>
+			<div class="footer-block">
+				<p class="footer-title">Контакты</p>
+				<p>Мир игрушек</p>
+				<p>+7(495)999-99-99</p>
+				<p>г. Москва, проспект Вернадского, 78с4, 119454</p>
+				
+				
+			</div>
+		</div>
+		<p class="copyright">©Шилов Павел 2023</p>
+		<p class="copyright">ИКБО-30-22</p>
+	</footer>
+</body>
+
+</html>
